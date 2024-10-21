@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint NFT - Mint Hub</title>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script> <!-- Include UMD version of Ethers.js -->    <link rel="stylesheet" href="Mint.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+                <li><a href="mint.html" class="active">Mint NFT</a></li>
+                <li><a href="#" id="connectWallet">Connect Wallet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mint Your NFT</h1>
+        <form id="mintForm">
+            <label for="nftName">NFT Name:</label>
+            <input type="text" id="nftName" required>
+
+            <label for="nftDescription">Description:</label>
+            <textarea id="nftDescription" required></textarea>
+
+            <label for="nftImage">Upload Image:</label>
+            <input type="file" id="nftImage" accept="image/*" required>
+
+            <button type="submit">Mint NFT</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mint Hub. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script> <!-- Include UMD version of Ethers.js -->
+    <script src="Mint.js"></script> 
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell NFTs</title>
+    <link rel="stylesheet" href="sell.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="sell.html" class="active">Sell</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="mint.html">Mint</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sell Your NFT</h1>
+        <form id="sell-nft-form">
+            <label for="nft-title">NFT Title:</label>
+            <input type="text" id="nft-title" required>
+
+            <label for="nft-description">Description:</label>
+            <textarea id="nft-description" required></textarea>
+
+            <label for="nft-price">Set Price:</label>
+            <input type="number" id="nft-price" required>
+
+            <label for="nft-royalties">Royalties (%):</label>
+            <input type="number" id="nft-royalties" min="0" max="100 required">
+
+            <label for="nft-listing-type">Listing Type:</label>
+            <select id="nft-listing-type" required>
+                <option value="fixed">Fixed Price</option>
+                <option value="auction">Auction</option>
+            </select>
+
+            <button type="submit">List NFT</button>
+        </form>
+        
+        <div id="listing-management">
+            <h2>Your Listings</h2>
+            <div id="listings-container"></div>
+        </div>        
+    </main>
+
+    <script src="App.js"></script>
+</body>
+</html>

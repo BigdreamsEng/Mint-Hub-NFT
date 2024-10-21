@@ -1,0 +1,132 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #101010;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2a2a2a;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.connect-wallet {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url('banner.jpg'); /* Add the correct image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-buttons button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cta-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.about {
+    padding: 40px 20px;
+}
+
+.popular-nfts {
+    padding: 40px 20px;
+    background-color: #292929;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.popular-nfts h3 {
+    margin-bottom: 30px;
+}
+
+.nft-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nft-card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+}
+
+.nft-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.nft-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.how-it-works {
+    padding: 40px 20px;
+}
+
+.how-it-works img {
+    max-width: 100%;
+    border-radius: 10px;
+}

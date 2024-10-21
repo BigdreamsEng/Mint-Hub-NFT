@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="App.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.1/dist/web3.min.js"></script>
+    <title>NFT Marketplace</title>
+</head>
+<body>
+    <div class="container">
+        <h1>NFT Marketplace</h1>
+
+        <h2>Mint NFT</h2>
+        <form id="mintForm">
+            <input type="text" id="mintAddress" placeholder="Recipient Address" required>
+            <input type="text" id="tokenURI" placeholder="Token URI" required>
+            <button type="submit">Mint NFT</button>
+        </form>
+
+        <h2>List NFT</h2>
+        <form id="listForm">
+            <input type="text" id="nftAddress" placeholder="NFT Contract Address" required>
+            <input type="number" id="tokenId" placeholder="Token ID" required>
+            <input type="number" id="price" placeholder="Price in Wei" required>
+            <button type="submit">List NFT</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="web3.min.js"></script>
+    <script src="marketplace.js"></script>
+</body>
+</html>

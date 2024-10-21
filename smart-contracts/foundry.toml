@@ -1,0 +1,6 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+rpc_url = "https://sepolia.base.org"  # Use the correct RPC URL for Base Sepolia

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="marketplace.css">
+  <title>NFT Marketplace - Mint Hub</title>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Mint Hub Logo">
+      <h1>Mint Hub</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="#" class="connect-wallet-btn">Connect Wallet</a></li>
+    </ul>
+  </nav>
+
+  <!-- Marketplace Section -->
+  <div class="marketplace-container">
+    <h1 class="marketplace-title">Discover & Trade NFTs</h1>
+
+    <!-- Search and Filters Section -->
+    <div class="search-filter-section">
+      <input type="text" placeholder="Search NFTs..." class="search-bar">
+      <div class="filters">
+        <select>
+          <option value="">Categories</option>
+          <option value="art">Art</option>
+          <option value="music">Music</option>
+          <option value="gaming">Gaming</option>
+          <!-- Add more categories here -->
+        </select>
+        <select>
+          <option value="">Price Range</option>
+          <option value="low-to-high">Low to High</option>
+          <option value="high-to-low">High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- NFTs Display Grid -->
+    <div class="nft-grid">
+      <!-- Example NFT Card -->
+      <div class="nft-card">
+        <img src="nft-image.jpg" alt="NFT Image" class="nft-image">
+        <div class="nft-info">
+          <h2 class="nft-title">Cool NFT #1</h2>
+          <p class="nft-price">Price: 0.5 ETH</p>
+          <a href="#" class="buy-button">Buy Now</a>
+          <a href="#" class="view-button">View Details</a>
+        </div>
+      </div>
+      <!-- More NFT cards will be dynamically added here -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

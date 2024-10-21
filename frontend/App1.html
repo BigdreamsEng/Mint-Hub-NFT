@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="App1.css">
+    <script src="./node_modules/ethers/dist/ethers.umd.min.js"></script>
+    <title>NFT Marketplace - Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Mint Hub</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">My NFTs</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="user-info">
+                <img src="MintHub Img/WhatsApp Image 2024-10-21 at 06.31.06_5b0ace40.jpg" alt="User Profile Picture" class="profile-pic">
+                <h1>Welcome, Paul!</h1>
+                <p>Wallet Balance: <strong id="wallet-balance">0 ETH</strong></p>
+                <button id="wallet-connection">Connect Wallet</button>
+                <p id="wallet-address"></p>
+            </div>
+
+            <div class="marketplace-overview">
+                <h2>Marketplace Overview</h2>
+                <div class="nfts">
+                    <div class="nft-card">
+                        <img src="MintHub Img/WhatsApp Image 2024-10-21 at 06.29.12_ad511071.jpg" alt="NFT 1">
+                        <h3>NFT Title 1</h3>
+                        <p>Price: $200</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                    <div class="nft-card">
+                        <img src="MintHub Img/WhatsApp Image 2024-10-21 at 06.29.12_ad511071.jpg" alt="NFT 2">
+                        <h3>NFT Title 2</h3>
+                        <p>Price: $300</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                    <!-- Add more NFT cards as needed -->
+                </div>
+            </div>
+
+            <div class="actions">
+                <h2>Your Actions</h2>
+                <button class="mint-nft" onclick="window.location.href='mint.html'">Mint/Create NFT</button>
+                <button class="sell-nft">Sell NFT</button>
+            </div>
+
+            <div class="recent-activity">
+                <h2>Recent Activity</h2>
+                <ul>
+                    <li>Sold NFT Title 1 for $200</li>
+                    <li>Minted NFT Title 2</li>
+                    <li>Purchased NFT Title 3 for $300</li>
+                </ul>
+            </div>
+        </section>
+
+        <aside class="support">
+            <h2>Support</h2>
+            <p>If you need assistance, please visit our <a href="#">FAQs</a> or contact <a href="#">support</a>.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mint Hub. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="./node_modules/ethers/dist/ethers.umd.min.js"></script>
+    <script src="Dashboard.js"></script>
+    <!-- <script src="App.js"></script> -->
+</body>
+</html>
